@@ -1,31 +1,30 @@
 body {
   margin: 0;
-  background-color: rgb(229 231 235);
-  color: black;
+  background-color: var(--background);
+  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .side-nav {
   padding: 1rem;
   width: 14rem;
-  background-color: rgb(31 41 55);
-  color: white;
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
 .side-nav-link {
   display: block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: white;
+  padding: 0.5rem;
+  color: var(--foreground);
 }
 
 .side-nav-link.active {
   font-weight: 700;
-  background-color: rgb(75 85 99);
+  background-color: var(--background);
 }
 
 .side-nav-link:hover {
-  background-color: rgb(75 85 99);
+  background-color: var(--background);
 }
 
 .app-wrapper {
@@ -35,7 +34,7 @@ body {
 
 .content-wrapper {
   width: 100%;
-  background-color: white;
+  background-color: var(--background);
   padding: 1rem;
 }
 
