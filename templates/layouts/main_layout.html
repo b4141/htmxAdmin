@@ -1,50 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'index.html' %}
+{% block app %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initil-scale=1.0">
-  <link id="css-theme" rel="stylesheet" href="{{ url_for('static', filename='css/themes/darkTheme.css') }}" />
-  <!-- <link id="css-theme" rel="stylesheet" href="{{ url_for('static', filename='css/themes/lightTheme.css') }}" /> -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
-  <script src="https://unpkg.com/htmx.org@latest"></script>
-  <title>HTMX Admin</title>
-</head>
+{% include('partials/side_nav.html') %}
+<div class="content-wrapper" id="content-wrapper">
+  {%block content%}{%endblock content%}
+</div>
 
-
-<body>
-  <div class="app-wrapper">
-    {% include('partials/sidenav.html') %}
-    <div class="content-wrapper" id="content-wrapper">
-      {%block content%}{%endblock content%}
-    </div>
-  </div>
-
-
-  <script>
-    function updateActiveLink() {
-      const links = document.querySelectorAll('.side-nav-link');
-      const currentPath = window.location.pathname;
-
-      links.forEach(link => {
-        if (link.getAttribute('hx-get') === currentPath) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-        }
-      });
-    }
-
-    // Update active link on page load
-    document.addEventListener("DOMContentLoaded", updateActiveLink);
-
-    // Update active link after content is loaded via HTMX
-    document.body.addEventListener('htmx:afterRequest', updateActiveLink);
-  </script>
-  <!--
-  <script type="module" src="{{ url_for('static', filename='js/themeChanger.js') }}"></script>
-  -->
-
-</body>
-
-</html>
+{% endblock app %}

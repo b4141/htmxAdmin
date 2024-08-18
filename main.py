@@ -3,21 +3,15 @@ app = Flask(__name__)
 
 @app.before_request
 def before_request():
-    g.use_layout = request.headers.get("hx-request") != "true"
+    g.use_main_layout = request.headers.get("hx-request") != "true"
 
 @app.route('/')
 def index():
-    return render_template("pages/home.html")
+    return render_template("pages/dashboard/dashboard.html")
 
-@app.route('/users')
+@app.route('/tasks')
 def users():
-    return render_template("pages/users.html")
-
-
-@app.route('/posts')
-def posts():
-    return render_template("pages/posts.html")
-
+    return render_template("pages/tasks/tasks.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

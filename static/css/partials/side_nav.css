@@ -1,0 +1,21 @@
+.side-nav {
+  padding: 1rem;
+  width: 14rem;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.side-nav .side-nav-link {
+  display: block;
+  padding: 0.5rem;
+  color: var(--foreground);
+}
+
+.side-nav .side-nav-link.active {
+  font-weight: 700;
+  background-color: var(--background);
+}
+
+.side-nav .side-nav-link:hover {
+  background-color: var(--background);
+}

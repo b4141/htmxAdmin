@@ -1,0 +1,25 @@
+<div class="side-nav" hx-target="#content-wrapper">
+  <a hx-get="/" hx-push-url="true" class="side-nav-link">Dashboard</a>
+  <a hx-get="/tasks" hx-push-url="true" class="side-nav-link">Tasks</a>
+</div>
+
+<script>
+  function updateActiveLink() {
+    const links = document.querySelectorAll('.side-nav-link');
+    const currentPath = window.location.pathname;
+
+    links.forEach(link => {
+      if (link.getAttribute('hx-get') === currentPath) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  // Update active link on page load
+  document.addEventListener("DOMContentLoaded", updateActiveLink);
+
+  // Update active link after content is loaded via HTMX
+  document.body.addEventListener('htmx:afterRequest', updateActiveLink);
+</script>
