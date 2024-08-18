@@ -19,6 +19,11 @@ body {
   color: white;
 }
 
+.side-nav-link.active {
+  font-weight: 700;
+  background-color: rgb(75 85 99);
+}
+
 .side-nav-link:hover {
   background-color: rgb(75 85 99);
 }
