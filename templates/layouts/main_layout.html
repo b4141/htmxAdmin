@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initil-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+  <script src="https://unpkg.com/htmx.org@latest"></script>
+  <title>HTMX Admin</title>
+</head>
+
+
+<body>
+  <div class="app-wrapper">
+    {% include('partials/sidenav.html') %}
+    <div class="content-wrapper" id="content-wrapper">
+      {%block content%}{%endblock content%}
+    </div>
+  </div>
+</body>
+
+</html>
