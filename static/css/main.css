@@ -113,6 +113,20 @@ button[variant=ghost]:hover:enabled {
   box-shadow: none;
 }
 
+button[variant=link] {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: transparent;
+  box-shadow: none;
+}
+
+button[variant=link]:hover:enabled {
+  text-decoration-line: underline;
+  background-color: transparent;
+  color: var(--primary);
+  border-color: transparent;
+  box-shadow: none;
+}
 
 
 .app-wrapper {
