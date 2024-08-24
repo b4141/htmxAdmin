@@ -4,31 +4,37 @@
   --radius: 0.5rem;
 
   /* CSS Variables for dark theme */
-  --background: #010816;
-  --foreground: #f7f9fb;
+  --background: #020817;
+  --foreground: #f8fafc;
 
-  --card: #010816;
-  --card-foreground: #f7f9fb;
+  --card: #020817;
+  --card-foreground: #f8fafc;
 
-  --popover: #010816;
-  --popover-foreground: #f7f9fb;
+  --popover: #020817;
+  --popover-foreground: #f8fafc;
 
-  --primary: #f7f9fb;
-  --primary-foreground: #0f172a;
+  --primary: #f8fafc;
+  --primary-foreground: #020817;
 
   --secondary: #1e293b;
-  --secondary-foreground: #f7f9fb;
+  --secondary-foreground: #f8fafc;
 
   --muted: #1e293b;
-  --muted-foreground: #94a3b7;
+  --muted-foreground: #94a3b8;
 
   --accent: #1e293b;
-  --accent-foreground: #f7f9fb;
+  --accent-foreground: #f8fafc;
 
   --destructive: #7f1d1d;
-  --destructive-foreground: #f7f9fb;
+  --destructive-foreground: #f8fafc;
 
   --border: #1e293b;
   --input: #1e293b;
-  --ring: #cad4e0;
+  --ring: #cbd5e1;
+
+  --shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --ring-shadow: 0 0 #0000;
+  --ring-offset-shadow: 0 0 #0000;
+  --hover-opacity: 0.9;
+  --disabled-opacity: 0.5;
 }

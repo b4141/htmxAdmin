@@ -4,31 +4,37 @@
   --radius: 0.5rem;
 
   /* CSS Variables for light theme */
-  --background: #FFFFFF;
-  --foreground: #0D0D1D;
+  --background: #ffffff;
+  --foreground: #020817;
 
-  --card: #FFFFFF;
-  --card-foreground: #0D0D1D;
+  --card: #ffffff;
+  --card-foreground: #020817;
 
-  --popover: #FFFFFF;
-  --popover-foreground: #0D0D1D;
+  --popover: #ffffff;
+  --popover-foreground: #020817;
 
-  --primary: #1E1E3A;
-  --primary-foreground: #F2F4F8;
+  --primary: #0f172a;
+  --primary-foreground: #f8fafc;
 
-  --secondary: #E8EAF0;
-  --secondary-foreground: #1E1E3A;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
 
-  --muted: #E8EAF0;
-  --muted-foreground: #5C6D7E;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
 
-  --accent: #E8EAF0;
-  --accent-foreground: #1E1E3A;
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
 
-  --destructive: #FF5C5C;
-  --destructive-foreground: #F2F4F8;
+  --destructive: #ef4444;
+  --destructive-foreground: #f8fafc;
 
-  --border: #D4DCE8;
-  --input: #D4DCE8;
-  --ring: #0D0D1D;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #020817;
+
+  --shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --ring-shadow: 0 0 #0000;
+  --ring-offset-shadow: 0 0 #0000;
+  --hover-opacity: 0.9;
+  --disabled-opacity: 0.5;
 }
