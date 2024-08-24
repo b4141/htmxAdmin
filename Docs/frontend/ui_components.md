@@ -61,6 +61,8 @@ The buttons can also be disabled by passing the *disabled* attribute to them
 **Other Button Types**\
 You can also add *icons* to the button, this is an example of a loading state:
 ```html
+{% from "/components/ui/animated_icons.html" import Loading %}
+
 <button variant="primary" disabled>
   {{ Loading(fill='var(--primary-foreground)') }}
   Loading

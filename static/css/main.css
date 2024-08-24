@@ -109,7 +109,6 @@ button[variant=ghost]:hover:enabled {
   background-color: var(--accent);
   color: var(--accent-foreground);
   border-color: var(--accent);
-  /* opacity: var(--hover-opacity); */
   box-shadow: none;
 }
 
