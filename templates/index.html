@@ -4,13 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initil-scale=1.0">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+
   <!-- <link id="css-theme" rel="stylesheet" href="{{ url_for('static', filename='css/themes/darkTheme.css') }}" /> -->
   <link id="css-theme" rel="stylesheet" href="{{ url_for('static', filename='css/themes/lightTheme.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/components/ui/animated_icons.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/components/ui/dropdown_menu.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/components/specific/theme_switcher.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/components/specific/user_nav.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/layouts/main_layout.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/partials/side_nav.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/partials/page_header.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/pages/dashboard/dashboard_page_header.css') }}" />
+
   <script src="https://unpkg.com/htmx.org@latest"></script>
   <title>HTMX Admin</title>
 </head>
@@ -21,6 +28,9 @@
     {% block app %}{% endblock app %}
   </div>
 
+  <script type="text/JavaScript" src="{{ url_for('static', filename='js/components/ui/dropdown_menu.js') }}"></script>
+  <script type="text/JavaScript" src="{{ url_for('static', filename='js/updateActiveLinks.js') }}"></script>
+  <script type="text/JavaScript" src="{{ url_for('static', filename='js/windowEvents.js') }}"></script>
   <!--
   <script type="module" src="{{ url_for('static', filename='js/themeChanger.js') }}"></script>
   -->

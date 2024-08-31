@@ -1,0 +1,11 @@
+{% macro DropDownMenu(class='', contentClass='', triggerText='trigger', triggerVariant='outline', triggerClass='') %}
+<div class="ui-dropdown-menu {{ class }}">
+  <button class="ui-dropdown-menu-button {{ triggerClass }}" variant="{{ triggerVariant }}"
+    onclick="dropDownClickShowHide(event)">
+    {{ triggerText }}
+  </button>
+  <div class="ui-dropdown-menu-content {{ contentClass }}">
+    {{ caller() }}
+  </div>
+</div>
+{%- endmacro %}
